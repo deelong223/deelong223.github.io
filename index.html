@@ -1,42 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的網站</title>
-    <style>
-        .web_title{
-            top: 100px;
-            left : 300px;
-            font-size: 400%;
-        }
-    </style>
+  <title>外部 JS 範例</title>
+  <script src="script.js"></script> <!-- 引入 JS -->
 </head>
 <body>
-    <div class="web_title">我的網站</div>
-    
-    <div>
-        <button onclick="toggleMenu()">目錄</button>
-    </div>
-    
-    <div id="menu" style="display:none;">
-        <ul>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
-        </ul>
-        <button onclick="toggleMenu()">收起目錄</button>
-    </div>
-    
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.style.display === 'none') {
-                menu.style.display = 'block';
-            } else {
-                menu.style.display = 'none';
-            }
-        }
-    </script>
+  <p id="demo">原文字</p>
+  <button onclick="updateDemo()">改文字</button>
 </body>
 </html>
